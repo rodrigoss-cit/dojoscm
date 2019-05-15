@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dojo Sample Mocha Test Server",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js --websocket-port=$OPENSHIFT_NODEJS_PORT --log-level=1",
     "mocha": "mocha --reporter spec test.js",
     "test": "mocha test.js --reporter mocha-junit-reporter --reporter-options mochaFile=test-reports.xml --exit"
   },
